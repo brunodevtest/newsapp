@@ -9,6 +9,7 @@ import { Subject } from 'rxjs';
   
   export class ArticleService {
     
+    public apiURL: string='https://newsserver20240719092101.azurewebsites.net/api/Article/GetLatest?page=';
     public actualPage: number=1;
     actualPageChange: Subject<number> = new Subject<number>();
     list: Subject<Article[]>= new Subject<Article[]>();
@@ -19,7 +20,7 @@ import { Subject } from 'rxjs';
   });}
   
     getArticles() {
-      return this.http.get<Article[]>('http://localhost:5010/api/Article/GetLatest?page='+this.actualPage.toString());
+      return this.http.get<Article[]>(this.apiURL+this.actualPage.toString());
     }
 
     setPage(page: number) {
