@@ -1,5 +1,12 @@
 
 .main{
-    width: 480px;
+    width: -webkit-fill-available;
+    max-width: 480px;
     margin:  0px auto 0px auto;
+}
+
+::ng-deep * {
+      
+    margin: 0;
+    padding: 0;
 }

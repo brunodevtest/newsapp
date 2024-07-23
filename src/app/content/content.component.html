@@ -21,7 +21,7 @@
     </mat-list>
   </div>
   <ng-template #noResults >
-    <p *ngIf="isDataLoaded">{{this.constants.emptyList}} "{{searchText}}".</p>
+    <p *ngIf="isDataLoaded && !this.errorDetected">{{this.constants.emptyList}} "{{searchText}}".</p>
   </ng-template>
 
 </div>
