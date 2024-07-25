@@ -10,6 +10,6 @@ export class AppConstants {
     public loading = "Loading...";
     public urlError = "URL not found";
     public error = "Error";
-    public search = "Search";
+    public search = "Search in this page";
     public emptyList = "No results found for"
 }

@@ -42,7 +42,6 @@ export class ContentComponent implements OnInit {
     this.isDataLoaded=false;
     this.articleService.getArticles().subscribe({
       next: (data) => {
-        console.log(data);
         data.map(item => console.log(ArticleType[item.type].toString()));
         this.list = data;
       },

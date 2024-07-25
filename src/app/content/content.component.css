@@ -62,12 +62,17 @@
     margin-bottom: 8px;
 }
 
+.searchInput{
+    font-size: 14px;
+    padding-left: 2px;
+}
+
 .list{
     margin-bottom: 8px;
 }
 
 .loading {
-    margin-top: 16px;
+    margin-top: 4px;
     font-weight: bold;
     display:inline-block;
     font-family: monospace;
@@ -83,7 +88,7 @@
   }
 
   .error {
-    margin-top: 16px;
+    margin-top: 4px;
     font-weight: bold;
     display:inline-block;
     font-family: monospace;

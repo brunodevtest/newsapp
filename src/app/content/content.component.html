@@ -1,11 +1,11 @@
 <div class="main">
   <div class="form-group mb-4">
-    <input class="form-control" type="text" [(ngModel)]="searchText" placeholder="Search">
+    <input class="searchInput" type="text" [(ngModel)]="searchText" placeholder={{this.constants.search}}>
   </div>
 
-  <h1 class="title">{{this.constants.listTitle}}</h1>
+  <h2 class="title">{{this.constants.listTitle}}</h2>
   <div *ngIf="!isDataLoaded" class="loading">{{this.constants.loading}}</div>
-  <div *ngIf="errorDetected" class="error">{{this.constants.error}}</div>
+  <div *ngIf="errorDetected && isDataLoaded" class="error">{{this.constants.error}}</div>
   <div class="list" *ngIf="(list | filter: searchText).length > 0; else noResults">
     <mat-list>
       <mat-list-item 
