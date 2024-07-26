@@ -1,8 +1,16 @@
 
 .main{
+    flex-direction: column;
+    display: flex;
+    height: 100%;
     width: -webkit-fill-available;
     max-width: 480px;
     margin:  0px auto 0px auto;
+}
+
+.app-content{
+    display: flex;
+    flex: 1;
 }
 
 ::ng-deep * {

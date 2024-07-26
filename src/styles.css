@@ -4,3 +4,7 @@
 * {
     font-family: 'Source Sans Pro', sans-serif;
 }
+
+body, html {
+    height: 100%;
+}
